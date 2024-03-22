@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="/images/api3.png" sizes="any">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <title>Polling System API</title>
+</head>
+
+<body>
+    <div class="container-fluid mb-5">
+        <div class="row mt-3 ">
+            <div class="col-md-12">
+                <h2 class="text-center fw-bold text-danger text-decoration-underline ">Muhib's Polling System API</h2>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-4 mb-4">
+        </div>
+
+        <div class="row justify-content-center mt-3">
+            <div class="col-md-8">
+                <h5>1. Create a question</h5>
+                <button class="btn btn-success btn-sm">Method POST</button>
+                <span class="ms-5 fst-italic fw-bold"> http://localhost:8000/questions/create </span>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-1">
+            <div class="col-md-8 ">
+                <h5>2. Add options to a question</h5>
+                <button class="btn btn-primary  btn-sm">Method POST</button>
+                <span class="ms-5 fst-italic fw-bold"> http://localhost:8000/questions/id/options/create </span>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-3">
+            <div class="col-md-8">
+                <h5>3. Add a vote to an option of question</h5>
+                <button class="btn btn-primary btn-sm">Method POST</button>
+                <span class="ms-5 fst-italic fw-bold"> http://localhost:8000/options/id/add_vote </span>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-3">
+            <div class="col-md-8">
+                <h5>4. Delete a question</h5>
+                <button class="btn btn-danger btn-sm">Method DELETE</button>
+                <span class="ms-5 fst-italic fw-bold">http://localhost:8000/questions/id/delete </span>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-3">
+            <div class="col-md-8">
+                <h5>5. Delete an option</h5>
+                <button class="btn btn-danger btn-sm">Method DELETE</button>
+                <span class="ms-5 fst-italic fw-bold bg-light"> http://localhost:8000/options/id/delete </span>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-3">
+            <div class="col-md-8">
+                <h5>6. View a question with it’s options and all the votes </h5>
+                <button class="btn btn-warning btn-sm">Method GET</button>
+                <span class="ms-5 fst-italic fw-bold"> http://localhost:8000/allquestions </span>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
